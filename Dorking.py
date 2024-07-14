@@ -1,5 +1,6 @@
 import webbrowser
 import time
+import sys
 
 # List of search queries
 search_queries = [
@@ -47,4 +48,4 @@ for i in range(0, len(search_urls), batch_size):
     batch = search_urls[i:i + batch_size]
     for url in batch:
         webbrowser.open(url)
-    time.sleep(10)  # Wait 5 seconds before opening the next batch
+    time.sleep(12)  # Wait 12 seconds before opening the next batch
